@@ -1,0 +1,13 @@
+.todo{
+    border: 2px solid black;
+    width: 500px;
+    color: black;
+    background-color: #EEEEEE;
+    margin-top: 20px;
+}
+.todo h3{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}

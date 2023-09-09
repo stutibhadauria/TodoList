@@ -1,0 +1,43 @@
+.todolist h4{
+    font-size: 1rem;
+    flex: 1;
+    color: black;
+    text-transform: capitalize;
+}
+.todolist p{
+    text-transform: capitalize;
+    font-size: 18px;
+    text-align: justify;
+}
+.todolist button{
+    background-color:#64CCC5;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10%;
+    font:inherit;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border: 1px solid #64CCC5;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-right: 1rem;
+    margin-left: 20px;
+}
+.todolist button:hover{
+    background-color: #176B87;
+    color: white;
+    border-radius: 10%;
+}
+.todolist{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    padding:0.5rem;
+    margin:1 rem 0;
+    border-radius:12px ;
+    background-color: #176B87;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
