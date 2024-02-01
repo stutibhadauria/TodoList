@@ -6,8 +6,8 @@ function Todolist({todo,onDelete}) {
   return (
     <>
     <div className='todolist'>
-      <h4>{todo.title}</h4>
-      <p>{todo.desc}</p>
+      <h4 className='text-white'>{todo.title}</h4>
+      <p className='text-white'>{todo.desc}</p>
       <button onClick={()=>{onDelete(todo)}}>Delete</button>
     </div>
    </>

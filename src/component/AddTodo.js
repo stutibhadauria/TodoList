@@ -17,7 +17,7 @@ function AddTodo({props,addTodo}) {
     }
   return (
     <div className='container addtodo'>
-        <h3>Add a todo</h3>
+        <h3 className='text-white'>Add a todo</h3>
         <form onSubmit={submit}>
             <div className='form'>
             <div className='mb-3'>

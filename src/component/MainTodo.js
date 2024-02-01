@@ -1,12 +1,10 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Login from './component/auth/Login';
-import Register from './component/auth/Register';
-import MainTodo from './component/MainTodo';
+import React, { useEffect, useState } from 'react'
+import Todo from './Todo';
+import AddTodo from './AddTodo';
+import '../index.css'
 
-function App() {
-  let initTodo;
+function MainTodo() {
+    let initTodo;
   if(localStorage.getItem("todos")===null){
     initTodo=[];
   }
@@ -43,16 +41,11 @@ function App() {
     localStorage.setItem("todos",JSON.stringify(todos))
   },[todos])
   return (
-  <>
-  {/* <AddTodo addTodo={addTodo}/>
-  <Todo todos={todos} onDelete={onDelete}/> */}
-  <Routes>
-    <Route path='/' element={<Login/>}/>
-    <Route path='/register' element={<Register/>}/>
-    <Route path='/todo' element={<MainTodo/>}/>
-  </Routes>
-  </>
-  );
+    <>
+    <AddTodo addTodo={addTodo}/>
+    <Todo todos={todos} onDelete={onDelete}/>
+    </>
+  )
 }
 
-export default App;
+export default MainTodo
